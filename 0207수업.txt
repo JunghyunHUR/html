@@ -1,0 +1,17 @@
+display
+
+block - form, div, p,h1~h6.
+          header, main, section
+inline - span, a, img, input
+
+display : none (보이지 않음) // visibility : hidden;(투명하게)
+
+position:static; (기본값 박스는 위치값을 갖지 않으며 주변 상황에 맞게 위치한다.)
+
+position:absolute; (주변에 다른 것과 상관없이 자기의 위치값을 갖는다. 단, 부모가
+                        위치값을 갖고 있다면 부모로 부터 좌표가 시작된다.)
+position:relative; (
+
+
+
+

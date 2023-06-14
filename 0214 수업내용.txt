@@ -1,0 +1,19 @@
+CSS
+
+부모박스
+display-flex
+
+세로정렬, 가로정렬
+flex-direction : column column-reverse row row-reverse
+
+줄바꿈
+flex-wrap : nowrap(기본값) wrap wrap-reverse
+
+flex-direcrion + flex-wrap
+flex-flow : row wrap
+
+자식박스 정렬
+justify-content : flex-start(기본값), flex-end, center, space-around, space-between
+
+align-items : flex-start, flex-end, center, stretch(기본값), baseline
+

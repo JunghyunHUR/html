@@ -1,0 +1,154 @@
+1. 프로그램 운영지원 - git (리눅스 cil 연습, git 복습)
+2. html, css (html, css 복습, 웹페이지 제작 - git 연동)
+3. javascript (javascript 복습, 함수)
+
+1.git 명령어
+
+- 작업 공간 시작
+clone : 저장소를 복제 해 새 디렉터리로 가져옴.
+init : 빈 git 저장소를 만들거나 기존 저장소를 다시 초기화.
+
+-변경 사항에 대한 작업
+add : 파일 내용을 인덱스에 추가.
+mv : 파일, 디렉터리, 실볼릭 링크를 옮기거나 이름을 바꿈.
+restore : Restore working tree files.
+rm : 파일을 작업 폴더에서 제거하고 인덱스에서도 제거함.
+
+-커밋 내역과 상태보기
+bisect : 이전 탐색으로 버그를 만들어낸 커밋을 찾는다.
+diff : 커밋과 커밋 사이, 커밋과 작업 내용 사이 등의 바뀐 점을 본다.
+grep : 패턴과 일치하는 줄을 표시.
+log : 커밋 기록을 표시.
+show : 여러가지 종류의 오브젝트를 표시.
+status : 작업 폴더 상태를 표시.
+
+-커밋 내역을 키우고, 표시하고, 조작하기.
+branch : 브렌치를 만듬, 삭제, 목록출력.
+commit : 바뀐 사항을 저장소에 기록.
+merge : 여러 개의 개발 내역을 하나로 합침.
+reset : 현재 head를 지정한 상태로 재설정.
+
+
+pwd : 현재 위치를 나타냄
+ls(dir) : 목록보기(리눅스)
+         -a : 숨김 파일이나 디렉터리도 함께 표시
+         -l : 파일이나 디렉터리의 상세정보 표시
+         -r : 파일 정렬을 반대로
+         -t : 작성 시간 순서대로 표시
+
+cd : 페이지 이동
+cd : / 절대경로 제일 처음
+     ./ 현재 디렉터리
+     ../ 이전 디렉터리
+     ~ 현재 접속중인 디렉터리를 나타내며 
+     cd ~ 하면 접속한 디렉터리로 돌아가게 된다.
+
+mkdir : 
+          mkdir 폴더명 : 디렉터리 만들기.
+rm : 
+      rm -r 폴더명 : 디렉터리와 그 하위의 디렉터리, 파일 모두 삭제
+
+clear : 터미널 정리
+exit : 터미널 종료
+
+vim 모드변경
+i : 입력모드
+esc : 명령모드
+:w 또는 :write : 편집하던 문서를 저장함
+:q 또는 :qiut - 편집하던 문서를 종료함
+:wq : 편집하던 문서를 저장하고 종료함
+:q! : 저장하지 않고 편집기 종료(.swap인 임시파일이 생김)
+:wq 파일명 : 편집하던 문서를 지정한 파일 이름으로 저장(다른이름으로 저장)
+
+.gitignore
+
+ git 을 사용하는 이유
+
+- 형상관리
+- 협업
+
+
+홈페이지 v1.0
+
+홈페이지 - 메인페이지 수정, 서브1 페이지 수정 v1.1
+
+//홈페이지 - 서브 2페이지 수정 v1.12
+
+홈페이지 - 메인 에러 수정 v1.13
+
+or
+
+홈페이지 v1.0
+기본틀
+
+서브1
+서브2
+서브3
+
+git add .
+git commit -m
+
+*git commit -am (add + commit + 메시지 등록)
+단, 새로 추가되는 파일이 없을 때만 가능.
+
+1. efg 에 멤버를 한 명 추가 한 후 커밋 - 메시지 "Add efg to members"
+
+2. fgh.json 추가 - 내용은 앞에것과 비슷하게 만듦. -메시지 "Add group fgh"
+
+3. efg 삭제, bcd master 를  James로 교체
+   -ghi.json 추가 내용은 앞에것과 비슷하게
+   -메시지 "Replace efg. bcd mod, ghi add"
+ 
+
+html
+
+form
+    <form action="" method="post">
+        <input type="text" name="username">
+1. 폼에 쓴 내용을 변수에 담아서 페이지로 넘김
+
+input type="button" // 버튼
+input type="reset" // 폼 내용 지우기
+input type="submit" // 폼 전송
+
+<input type="submit" value="버튼">
+<button type="button">버튼</button>
+
+input type="checkbox"
+input type="radio"
+textarea /textarea
+
+select option /option /select
+
+required
+
+버튼 디자인
+
+구글에 button generator 검색
+
+javascript
+
+자바스크립트 데이터 타입
+
+기본타입
+
+1. 숫자(number)
+2. 문자형(string)
+3. 불린값(Boolean)
+4. undefined
+5. Null
+
+창조타입
+
+1. 배열(Array)
+2. 함수(function)
+3. 정규표현식
+
+
+
+
+
+
+
+
+

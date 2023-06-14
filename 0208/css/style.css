@@ -1,0 +1,66 @@
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+}
+.container{
+    width: 1000px;
+    margin:0,auto;
+}
+.banner{
+    height: 400px;
+    background-color: pink;
+    text-align: center;
+    font-size: 100px;
+    color:#ccc;
+    margin-top:0;
+    overflow-y: scroll;
+}
+.header{
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding-top: 30px;
+    position: sticky;
+    top:0;
+    background-color: rgb(255,255,255,0);
+}
+.header:before{
+    content: "안녕안녕";
+    
+}
+.header::after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 10px;
+    background-color: red;
+    margin: auto;
+    display: none;
+}
+.header:hover::after{
+    display: block;
+}
+section{
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #ccc;
+}
+a:hover{
+    font-weight: bold;
+    background: yellow;
+}
+.banner:hover{
+    background-color: red;
+}
+section p:first-child{
+    background-color: yellowgreen;
+}
+section p:last-child{
+    background-color: yellowgreen;
+}
+section p:nth-child(odd){
+    background-color: yellowgreen;
+}
+a:lang(no){
+    quotes: "%%""%%";
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+        .accordion{
+            outline: none;
+            border: none;
+            background: #ededed;
+            color: #333;
+            cursor: pointer;
+            padding: 18px;
+            font-size: 16px;
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        /* .accordion::after{
+            content: '\002B';
+            color: #333;
+            font-weight: bold;
+            float: right;
+        }
+        .active::after{
+            content: '\2212';
+        } */
+        .accordion:last-child{
+            border-bottom: none;
+        }
+        .accordion i{
+            float: right;
+        }
+        .panel{
+            padding: 0 18px;
+            background: #fff;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3;
+        }
+        .active, .accordion:hover{
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>2.아코디언메뉴</h1>
+        <button class="accordion">내용1
+            <i class="fa-solid fa-plus"></i>
+        </button>        
+        <div class="panel">
+            <p>피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+            </p>
+        </div>
+        <button class="accordion">내용2
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="panel">
+            <p>피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+            </p>
+        </div>
+        <button class="accordion">내용3
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="panel">
+            <p>피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+                피어나기 무엇을 꽃이 구하기 산야에 오아이스도 위하여, 사막이다.
+                인간에 이상은 것은 말이다.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const acc = document.getElementsByClassName("accordion");
+        let i;
+        for(i = 0; i < acc.length; i++){
+            acc[i].addEventListener("click", function(){
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if(panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                    this.children[0].classList.add('fa-plus');
+                    this.children[0].classList.remove('fa-minus');
+                }else{
+                    panel.style.maxHeight = panel.scrollHeight + 'px';
+                    this.children[0].classList.remove('fa-plus');
+                    this.children[0].classList.add('fa-minus');
+                }
+                // this.children[0].classList.toggle('fa-plus');
+                // this.children[0].classList.toggle('fa-minus');
+            });
+        }
+    </script>
+</body>
+</html>

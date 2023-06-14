@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+            width : 200px;
+            height: 200px;
+        }
+        .box1,.box2{
+            
+            display:block;
+             border-style:; 
+        }
+        .box1{
+            width : 1200px;
+            
+            background-color:rgb(244,197,197);
+            position:static;
+        }
+        .box2{
+            max-width : 1200px;
+            
+            background-color:rgb(189,189,241);
+            position:absolute;
+            top:20px;
+            left:20px;
+        }
+        .container{
+            width:300px;
+            height:300px;
+            background: green;
+            margin-top:200px;
+            margin-left:200px;
+            position:relative;
+        } */
+        *{box-sizing: border-box;}
+        .container{
+            width:300px;
+            height:300px;
+            position:relative;
+        }
+        .gallery{
+            width: 300px;
+            height:400px;
+            float:left;
+        }
+        img{
+            max-width: 100%;
+            display:none;
+        }
+        .gallery:hover>img.img{
+            display:block;
+        }
+        .box{
+            width: 200px;
+        }
+        .top{
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            background: #000;
+            padding-top: 7px;
+            position:fixed;
+            right: 20px;
+            bottom:20px;
+        }
+        .top a {
+            color:#fff;
+            text-decoration: none;
+            font-size: 19px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box1">이는 행복스럽고 없으면 피고 보배를 것은 무엇이 듣는다. 
+        </div>
+        <div class="container">
+            <div class="gallery">1
+                <img src="image/001.jpg" alt="001">
+            </div>
+            <div class="gallery">2
+                <img src="image/002.jpg" alt="002">
+            </div>
+            <div class="gallery">3
+                <img src="image/003.jpg" alt="003">
+            </div>
+        </div>
+    </div>
+    <div class="top">
+
+    </div>
+</body>
+</html>

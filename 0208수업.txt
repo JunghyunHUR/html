@@ -1,0 +1,52 @@
+CSS
+
+overflow
+ - visible default
+ - hidden
+ - scroll
+ - auto
+
+overflow-x
+overflow-y
+
+가상클래스
+
+a(:link) 요소에 링크가 걸려 있을 때
+a:visited - 링크에 방문한 경우가 있을때 (웹브라우저 방문기록에 기록되어 있을 경우)
+a:active - 마우스가 눌렀을 때
+a:hover - 마우스가 올라갔을 때
+
+
+:first-child - 첫번째 순서를 갖고 옴
+:last-child - 마지막 순서를 갖고 옴
+:nth-child(인덱스번호) - 해당 순서를 갖고 옴 (홀수 - odd, 짝수 - even)
+           -nth-child(2n)또는 nth-child(even) - 짝수만
+           -nth-child(2n-1) 또는 nth-child(odd) - 홀수만
+
+first-of-type -
+
+p:nth-of-type(2)
+<section>
+<div></div>
+<p></p>
+*<p></p>
+</section>
+
+가상 요소
+
+::before
+::after
+
+
+
+float 에 있어서 가상 요소 사용법
+
+
+
+
+
+
+
+
+
+

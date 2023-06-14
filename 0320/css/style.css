@@ -1,0 +1,92 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
+
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 768px;
+    min-height: 100%;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+    color: #333;
+}
+ul{
+    list-style: none;
+}
+/* nav */
+nav{
+    min-height: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 100;
+}
+.navbar-nav{
+    padding: 10px;
+    list-style: none;
+    transform: translateX(-50%);
+    transition: all 400ms;
+    top: 0;
+}
+.navbar-nav.active{
+    width: 50%;
+    min-height: 640px;
+    background: #ddd;
+    border-right: 1px solid #333;
+    transform: translateX(0);
+    transition: all 400ms;
+    z-index: 100;
+}
+.hamber{
+    position: absolute;
+    display: block;
+    margin: 20px;
+    z-index: 100;
+}
+.hamber span{
+    width: 20px;
+    height: 3px;
+    background-color: #000;
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.nav-item{
+    position: absolute;
+    top: 60px;
+    margin: 0;
+    padding: 10px;
+}
+.nav-item li{
+    padding: 10px 50px;
+    /* border: 1px solid #333; */
+    background: #eee;
+}
+
+.search{
+    position: absolute;
+    display: block;
+    margin: 10px;
+    top: 0;
+    right: 0;
+    float: right;
+}
+.search i{
+    float: right;
+}
+/* content */
+.content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.row{
+    margin: 70px 20px 0;
+}

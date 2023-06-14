@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            background-color: #ff0, #6c0, #fcf, #cf0, #39f;
+        }
+        
+    </style>
+    <script>
+        const color = ['#ff0', '#6c0', '#fcf', '#cf0', '#39f'];
+        function changeColor(){
+            const Body = document.getElementById("body");
+            body.style.backgroundColor = color[Math.floor(Math.random()*color.length)];
+        }
+        
+        // function changColor(){
+        //     let arrColor = ['#ff0', '#6c0', '#fcf', '#cf0', '#39f'];
+        //     let num = Math.floor(Math.random() * arrColor.length);
+        //     document.getElementById("body").style.backgroundColor = arrColor[num];
+        // }
+        
+        
+    </script>
+</head>
+<body id="body">
+    <button onclick="changeColor()">배경화면 색깔 바꾸기</button>
+    
+</body>
+</html>

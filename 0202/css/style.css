@@ -1,0 +1,37 @@
+body{
+    
+    /* 1. style variant weight size/line-height font-family
+    2. size family */
+    font : italic small-caps bold 13px/30px 'noto sans KR';
+
+}
+.a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600px;
+    
+    line-height:1.2;
+    text-indent:30px;
+    word-spacing: 5px;
+    letter-spacing:-2px;
+}
+.b{
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: justify;
+}
+.c{
+    font-family: 'Dongle', sans-serif;
+    font-weight: 25px;
+}
+.d{
+    font-family:'Unbounded';
+    text-transform: capitalize;
+    
+    
+}
+.b span {
+    /* text-decoration-line: underline overline;
+    text-decoration-color: red;
+    text-decoration-style: wavy; */
+    text-decoration:underline overline red solid ;
+    text-decoration:none;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        nav{
+            overflow: auto;
+        }
+        .tablink{
+            display: block;
+            float: left;
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            font-size: 20px;
+            width: 25%;
+            text-align: center;
+            text-decoration: none;
+            font-variant: small-caps;
+            transition: all 300ms;
+        }
+        .tablink:hover{
+            background-color: #888;
+        }
+        .tabcontent{
+            color: #fff;
+            padding: 100px 50px;
+            height: 100%;
+        }
+        #home{
+            background-color: red;
+        }
+        #news{
+            background-color:green;
+        }
+        #contact{
+            background-color: blue;
+        }
+        #about{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="tablink" id="default" onclick="tabPage('home', this, 'red')">Home</a>
+        <a href="#" class="tablink" onclick="tabPage('news', this, 'green')">News</a>
+        <a href="#" class="tablink" onclick="tabPage('contact', this, 'blue')">Contact</a>
+        <a href="#" class="tablink" onclick="tabPage('about', this, 'orange')">About</a>
+    </nav>
+    <div id='home'class="tabcontent">
+        <p></p>
+    </div>
+    <div id='news'class="tabcontent">
+        <p></p>
+    </div>
+    <div id='contact'class="tabcontent">
+        <p></p>
+    </div>
+    <div id='about'class="tabcontent">
+        <p></p>
+    </div>
+    <script>
+        function tabPage(pageName, el, color){
+            let i, tablink, tabcontent;
+            tablink = document.getElementsByClassName('tablink');
+            tabcontent = document.getElementsByClassName('tabcontent');
+            
+            for(i = 0; i < tabcontent.length; i++){
+                tabcontent[i].style.display = 'none';
+            }
+            for(i = 0; i < tablink.length; i++){
+                tablink[i].style.backgroundColor = '';
+            }
+            document.getElementById(pageName).style.display = 'block';
+            el.style.backgroundColor = color;
+        }
+        document.getElementById('default').click();
+    </script>
+</body>
+</html>

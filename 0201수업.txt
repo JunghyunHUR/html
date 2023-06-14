@@ -1,0 +1,33 @@
+내용이 넘치는 속성 제어
+
+overflow : hidden, auto, scroll
+overflow-x
+overflow-y
+
+background-image:url(이미지경로);
+백그라운드 이미지 반복 명령
+background-repeat: repeat. no-repeat, repeat-x, repeat-y; 
+background-attachment : scroll(기본값), fixed, local
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+자바스크립트 삼항연산
+ (조건)? true:fales;
+
+위와 같은 3항 연산 식에서 참일 때 실행 문이 여러개 있거나 길다면, 
+또 false일 때 실행문이 여러개 있거나 길다면?
+
+if조건문
+만일 00가 00하다면 0000다.
+if (조건문) (
+   실행문
+)
+
+
+
+
+

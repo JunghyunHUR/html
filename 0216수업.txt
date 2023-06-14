@@ -1,0 +1,20 @@
+CSS
+
+order : 순서를 정함
+flex-grow : 반응형 늘어난 정도
+flex-shrink : 반응형 줄어드는 정도
+flex-basis : 크기(width)
+
+
+align-self
+
+media queries
+
+모니터 - screen
+프린터 - print
+리더기 - speech
+
+큰 화면에서 4개
+태블릿에서 3개    1200px
+모바일에서 1개     600px
+바뀌는 블럭을 만들어라

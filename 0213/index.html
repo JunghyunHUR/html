@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(../FSTWEB/image/03.jpg), url(../../images/bee.jpg);
+            background-position: right top, center;
+            background-repeat: no-repeat, no-repeat;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+        .box1{
+            background: blue;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .box1 img{
+            max-height: 100%;
+        }
+        .box2{
+            background: green;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            text-align: center;
+            font-size: 12px;
+            overflow: hidden;            
+        }
+        .box3{
+            border-radius: 50%;
+            background-image: conic-gradient(red, yellow, green);
+        }
+        .container{
+            width: 1200px;
+            height: auto;
+        }
+        .grbanner{
+            height: 350px;
+            background-image: radial-gradient(red, blue, green, pink, yellow);
+        /* 
+           to left, to right, to top, to bottom, 숫자 deg
+           red orange yellow green blue indigo violet
+
+           원형 지름 크기
+           closet-side, farthest-size, closest-corner, farthest-corner
+        */
+        }
+        .rainbow{
+            margin-top: 50px;
+            height: 400px;
+            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <img src="../../FSTWEB/images/01.jpg" alt="01">
+    </div>
+    <div class="box box2">
+        뼈 못할 뭇 산야에 황금시대를 인생의 지혜는 이것이다. 
+        청춘의 봄바람을 더운지라 간에 붙잡아 내는 것이다. 
+        천지는 눈이 황금시대의 맺어, 것이다. 어디 안고, 천자만홍이 있는 쓸쓸한 운다. 
+        충분히 사라지지 바이며, 인생에 사랑의 없는 찾아 이것이다. 
+        물방아 열매를 같이, 가는 되는 가진 무엇을 놀이 교향악이다. 
+        따뜻한 시들어 살 곧 길지 품었기 크고 위하여서.
+    </div>
+    <div class="box box3"></div>
+    <div class="container">
+        <div class="grbanner"></div>
+        <div class="rainbow"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+div p
+
+<div class="container">
+<div>
+     <p>
+           <span></span>
+     </p>
+</div>
+<p>
+</p>
+</div>
+
+
+Opacity
+backgroung-color.rgba(255,255,255,0.5)
+
+body font-size
+
+16px
+
+1em = 16px
+부모 2em
+
+자식 -- 1em 부모크기
+
+rem = root em
+
+
+
+!important
+
+.container{
+  width: 100% !import;
+
+
+}
+
+
+
+
+
+
+
+
+

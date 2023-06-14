@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지검색api 이용</title>
+</head>
+<body>
+    <div id="imgbox"></div>
+    
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+        kakaoImgApp();
+        function kakaoImgApp(){
+            $.ajax({
+                type: "GET",
+                url: "https://dapi.kakao.com/v2/search/image",
+                headers: {
+                    "Authorization" : "KakaoAk 906e7fb88f1af79bda2bf3d13b6942e6"
+                },
+                data: {
+                    "query" : "설현",
+                    "size" : 5
+                },
+                success: function(data){
+                    // console.log(data);
+                    $(data.documents).each(function(i){
+                        $("#imgbox").append(`<img src="${this.image_url}"/>`);
+                    });
+                },
+                error: function(xhr, textStatus){
+                    console.log(xhr.responseText);
+                    console.log("에러");
+                    return;
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+CSS
+
+classList.add("클래스이름") -- 클래스 추가
+classList.remove("클래스이름") -- 클래스 삭제
+
+classList.toggle("클래스이름") -- 클래스가 있으면 삭제 없으면 추가
+
+document.getElementById("아이디").className() 아이디라는 아이디의 클래스 이름을 가져옴
+
+
+
+
+
+
+
+
+
+
+
+
+
+

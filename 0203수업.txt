@@ -1,0 +1,103 @@
+git
+  두가지 목적
+- 타임캡슐 (시간 관리 도구)
+- 차원관리 도구
+
+ .gitignore - 관리하지 않음
+주석처리는 #이다
+1. #파일.확장자 (같은 이름의 모든 파일)
+   file.ja
+2. #최상위 폴더의 파일. 확장자
+    /file.js
+3. #js 확장자를 가진 모든 파일
+   *.js
+4. #위의 제외할 모든 확장자에 속하지만 무시하면 안될 경우
+    !file.js
+5. #logs 란 이름의 폴더(폴더안의 내용 모두), 파일
+   logs
+6. #logs 란 이름의 폴더만(폴더안의 내용 모두)
+   logs/
+7.logs
+  -a - ag.js
+  -b - ag.js
+  -c - ag.js
+  -d - ag.js
+
+logs/**/ag.js
+
+
+vim
+1. 입력 i
+2. 
+3. 입력 종료 esc
+
+4. 종료:  :q(저장 없이 종료)
+            :q!(저장없이 강제 종료 - 입력한 것이 없을때)
+            :wq(저장하고 종료)
+
+위로 스크롤 k
+아래로 스크롤 j
+
+
+css
+
+vertical-align : top, bottom, middle
+                    text-top, text-bottom, baseline, sub, super.
+text-decoration  : underline, upperline
+text-trandform(영어일때)
+
+들여쓰기 text-indent
+글자사이의 간격 letter-spacing
+단어사이의 간격 word-spacing
+행간 line-height
+
+font-family : sans-serif, serif
+font-style : normal, italic, oblique
+font-weight
+font-variant
+font-size
+
+white-space : 
+ -normal = 기본값으로 박스 끝에 닿으면 줄 바꿈이 일어난다.
+ -nowrap = 줄바꿈이 금지되며 박스를 벗어나도 한 줄로 표현된다.
+ -pre = html 소스에 쓰여진 그대로(줄바꿈, 띄어쓰기) 표현된다.
+ - pre-wrap = 소스에 쓰여진 그대로 표현되지만 박스를 벗어나면
+                    줄바꿈이 일어난다.
+ -pre-line = pre-wrap과 같지만 띄어쓰기는 한 칸만 인식한다.
+
+border 
+  -두께, 선의종류, 색상
+border-width
+border-style
+border-color
+
+margin(박스의 바깥 여백)
+margin : top right bottom letf 
+margin : top left/right bottom
+margin : top/bottom left/right
+margin : top/left/right/bottom
+
+padding(박스의 안쪽여백)
+
+HTML
+
+float 박스를 나눔
+.container>.col-4*3
+
+javascript
+
+for(초기값; 조건식; 증감식:{
+break;
+}
+
+1. while 문을 이용하여 구구단 5단을 출력하시오.
+
+2. for 문을 이용하여 구구단 1단 부터 9단 까지 출력하시오.
+
+3. 메게 변수를 받아 구구단중 해당 변수의 단을 출력 시키는
+   함수를 만들고 결과를 출력하시오
+
+4. 세 개의 변수를 받아 덧셈, 뺄셈, 곱셈, 나눗셈을 할 수 있는 
+   간단한 계산기 함수를 만드세요.
+
+5. w3schools.com javascript 배운부분의 문제 푸시오.
